@@ -49,18 +49,12 @@ for (const number of numbers){
 }
 console.log("-----------For....Of loop^^^^^");
 
-
-//***Extended challenge*** will come back to this. I found one possible solution
-//which requries a function and since we have not went over that I do not want 
-//to confuse myself and make it more difficult to learn when we g over it in class
 {
     let i = prompt("What is your name?");
-    let num1 = i.length;
-    let x = num1;
+    let LENGTH_OF_I = i.length;
 
-    do{
-        x++;
-        console.log(i);
+    for (let x = 0; x < 10 - LENGTH_OF_I; x++){
+        i = "+" + i;
     }
-    while( x < 10)
+    console.log(i)
 }
